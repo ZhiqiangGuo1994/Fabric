@@ -66,7 +66,7 @@ public class CreateChannel {
 			org2Admin.setMspId(FabricConfig.ORG2_MSP);
 			org2Admin.setName(FabricConfig.ADMIN);
 			
-			/*UserContext org3Admin = new UserContext();
+			UserContext org3Admin = new UserContext();
 			File pkFolder3 = new File(FabricConfig.ORG3_USR_ADMIN_PK);
 			File[] pkFiles3 = pkFolder3.listFiles();
 			File certFolder3 = new File(FabricConfig.ORG3_USR_ADMIN_CERT);
@@ -86,7 +86,7 @@ public class CreateChannel {
 					FabricConfig.ORG4_USR_ADMIN_CERT, certFiles4[0].getName());
 			org4Admin.setEnrollment(enrollOrg4Admin);
 			org4Admin.setMspId(FabricConfig.ORG4_MSP);
-			org4Admin.setName(FabricConfig.ADMIN);*/
+			org4Admin.setName(FabricConfig.ADMIN);
 
 			FabricClient fabClient = new FabricClient(org1Admin);
 
